@@ -4,40 +4,40 @@ import "./App.css";
 // List of website links
 const links = [
   {
-    title: "Discover Weekly",
-    subtitle: "by Spotify · 30 songs",
-    url: "https://www.spotify.com",
+    title: "Itzel and the Dark Amulet",
+    subtitle: "2026 · Paperback (Amazon)",
+    url: "https://link.amazon/B05BqXeop",
     image: "/images/page1.jpg",
   },
   {
-    title: "Workday – Pop",
-    subtitle: "by Spotify · 134 songs",
-    url: "https://www.spotify.com",
+    title: "Itzel and the Dark Amulet",
+    subtitle: "2026 · eBook Edition (Kindle)",
+    url: "https://link.amazon/B07cgg7Od",
     image: "/images/page2.jpg",
   },
   {
-    title: "Country Blend",
-    subtitle: "by Spotify · 33 songs",
-    url: "https://www.spotify.com",
+    title: "Spirit of the Kings",
+    subtitle: "2016 · Paperback (Amazon)",
+    url: "https://link.amazon/B02MBhYVX",
     image: "/images/page3.jpg",
   },
-  {
-    title: "Indie Chill »» Covers",
-    subtitle: "by Spotify · 69 songs",
-    url: "https://www.spotify.com",
-    image: "/images/page1.jpg",
+   {
+    title: "Spirit of the Kings",
+    subtitle: "2016 · eBook Edition (Kindle)",
+    url: "https://link.amazon/B08TzJyll",
+    image: "/images/page4.jpg",
   },
   {
-    title: "Country BBQ",
-    subtitle: "by Spotify · 47 songs",
-    url: "https://www.spotify.com",
-    image: "/images/page2.jpg",
+    title: "an era of abc rhymes",
+    subtitle: "2023 · Portrait Hardcover [bonus pages] (Amazon)",
+    url: "https://link.amazon/B02jHuIXM",
+    image: "/images/page5.jpg",
   },
   {
-    title: "Dark Dance Floors",
-    subtitle: "by Spotify · 52 songs",
-    url: "https://www.spotify.com",
-    image: "/images/page3.jpg",
+    title: "an era of abc rhymes",
+    subtitle: "2023 · Landscape Hardcover (IngramSpark)",
+    url: "https://shop.ingramspark.com/b/084?params=rBGCdBfop4fzWFDHKZBTJCziOK9RpwAtn3T3OUQ8QgV",
+    image: "/images/page5.jpg",
   },
 ];
 
@@ -48,7 +48,7 @@ function App() {
       {/* Banner */}
       <header className="banner">
         <img
-          src="/images/banner.jpg"
+          src="/images/banner.png"
           alt=""
           className="banner-image"
         />
@@ -98,7 +98,7 @@ function App() {
 
       {/* Footer */}
       <footer className="footer">
-        © {new Date().getFullYear()} JJ Mads Links
+        © {new Date().getFullYear()} JJ Madrigal
       </footer>
 
     </div>

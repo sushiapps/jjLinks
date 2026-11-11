@@ -1,36 +1,47 @@
-@media (min-width: 768px) {
-  .page {
-    max-width: 700px;
-  }
 
-  .link-image {
-    width: 70px;
-    height: 100px;
-  }
+/* Global Styles */
 
-  .link-item {
-    min-height: 115px;
-  }
+* {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #101416;
+  color: #ffffff;
+}
+
+
+/* Main Page */
 
 .page {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto;
   padding: 20px 16px;
 }
+
+
+/* Banner */
+
 .banner {
   position: relative;
-  height: 260px;
+  height: 150px;
+  margin-bottom: 22px;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 12px;
+  background: #252b30;
 }
 
 .banner-image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .banner-overlay {
   position: absolute;
   inset: 0;
@@ -38,67 +49,179 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 15px;
   text-align: center;
   color: white;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.40);
 }
 
-.banner-content {
-  padding: 25px 20px;
-}
-
-.banner h1 {
+.banner-overlay h1 {
   margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
 }
 
-.banner p {
+.banner-overlay p {
   margin: 0;
-  color: #666;
+  font-size: 14px;
+  color: #eeeeee;
 }
 
+
+/* Link List */
 
 .link-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   width: 100%;
 }
 
+
+/* Individual Link Card */
+
 .link-item {
-  display: flex;
+  display: grid;
+
+  /* Fixed image column, flexible text, fixed arrow */
+  grid-template-columns: 56px minmax(0, 1fr) 20px;
+
   align-items: center;
-  gap: 14px;
-  min-height: 90px;
-  padding: 8px 14px;
-  background: white;
-  border-radius: 12px;
+  column-gap: 12px;
+
+  width: 100%;
+  min-height: 82px;
+  padding: 8px 12px;
+
+  background: #1b2226;
+  border: 1px solid #30383d;
+  border-radius: 9px;
+
   text-decoration: none;
-  color: #222;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
+  color: #ffffff;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
+
+/* Card Hover */
 
 .link-item:hover {
+  background: #283238;
   transform: translateY(-2px);
-  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
+
+/* Card Image */
+
 .link-image {
-  width: 55px;
-  height: 80px;
+  display: block;
+  width: 56px;
+  height: 66px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 4px;
   flex-shrink: 0;
 }
 
-.link-title {
-  flex: 1;
-  font-size: 1.1rem;
-  font-weight: bold;
+
+/* Title and Subtitle Container */
+
+.link-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  gap: 5px;
+  text-align: left;
 }
 
+
+/* Link Title */
+
+.link-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.3;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* Link Subtitle */
+
+.link-subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  color: #a7b0b5;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* Navigation Arrow */
+
 .arrow {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  color: #a7b0b5;
+}
+
+
+/* Footer */
+
+.footer {
+  margin-top: 25px;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 12px;
+  color: #778187;
+}
+
+
+/* Desktop Adjustments */
+
+@media (min-width: 768px) {
+
+  .page {
+    max-width: 700px;
+    padding: 30px 20px;
+  }
+
+  .banner {
+    height: 190px;
+    margin-bottom: 28px;
+  }
+
+  .banner-overlay h1 {
+    font-size: 32px;
+  }
+
+  .link-item {
+    grid-template-columns: 65px minmax(0, 1fr) 24px;
+    min-height: 92px;
+    padding: 10px 15px;
+  }
+
+  .link-image {
+    width: 65px;
+    height: 72px;
+  }
+
+  .link-title {
+    font-size: 17px;
+  }
+
+  .link-subtitle {
+    font-size: 14px;
+  }
 }

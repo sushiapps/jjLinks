@@ -25,19 +25,19 @@ const links = [
     title: "Spirit of the Kings",
     subtitle: "2016 · eBook Edition (Kindle)",
     url: "https://link.amazon/B08TzJyll",
-    image: "/images/page4.jpg",
+    image: "/images/page4.png",
   },
   {
     title: "an era of abc rhymes",
     subtitle: "2023 · Portrait Hardcover [bonus pages] (Amazon)",
     url: "https://link.amazon/B02jHuIXM",
-    image: "/images/page5.jpg",
+    image: "/images/page5.png",
   },
   {
     title: "an era of abc rhymes",
     subtitle: "2023 · Landscape Hardcover (IngramSpark)",
     url: "https://shop.ingramspark.com/b/084?params=rBGCdBfop4fzWFDHKZBTJCziOK9RpwAtn3T3OUQ8QgV",
-    image: "/images/page5.jpg",
+    image: "/images/page5.png",
   },
 ];
 

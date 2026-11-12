@@ -54,8 +54,8 @@ function App() {
         />
 
         <div className="banner-overlay">
-          <h1>JJ Mads Links</h1>
-          <p>A collection of my favorite places on the web.</p>
+          <h1>JJ Madrigal</h1>
+          <p>a new world of magic</p>
         </div>
       </header>
 

@@ -98,7 +98,7 @@ function App() {
 
       {/* Footer */}
       <footer className="footer">
-        © {new Date().getFullYear()} JJ Madrigal
+        © 2016 - {new Date().getFullYear()} JJ Madrigal
       </footer>
 
     </div>

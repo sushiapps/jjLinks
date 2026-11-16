@@ -121,7 +121,7 @@ body {
 .link-image {
   display: block;
   width: 97px;
-  height: 108px;
+  height: 128px;
   object-fit: cover;
   border-radius: 4px;
   flex-shrink: 0;
@@ -214,7 +214,7 @@ body {
 
   .link-image {
     width: 97px;
-    height: 108px;
+    height: 128px;
   }
 
   .link-title {

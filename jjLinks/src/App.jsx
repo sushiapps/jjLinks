@@ -6,7 +6,7 @@ const links = [
   {
     title: "Itzel and the Dark Amulet",
     subtitle: "2026 · Paperback (Amazon)",
-    url: "https://link.amazon/B05BqXeop",
+    url: "https://link.amazon/B0i7OIo3f",
     image: "/images/page1.jpg",
   },
   {
